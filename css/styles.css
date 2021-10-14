@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Vazir-Black';
+  src: url('../fonts/Vazir.woff');
+  src: url('../fonts/Vazir.woff2');
+}
+
+@font-face {
+  font-family: 'Vazir-Black-Bold';
+  src: url('../fonts/Vazir-Bold.woff');
+  src: url('../fonts/Vazir-Bold.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Vazir-Black';
+  width: 100%;
+  height: 100vh;
+  direction: rtl;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.One {
+  background-color: rgb(252, 46, 46);
+}
+
+.Two {
+  background-color: rgb(46, 252, 207);
+}
+
+.Three {
+  background-color: rgb(46, 159, 252);
+}
+
+.Four {
+  background-color: rgb(40, 17, 240);
+}
+
+.Five {
+  background-color: rgb(240, 17, 240);
+}
+
+.to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 35px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.to-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 20px;
+}
+
+.to-top img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
